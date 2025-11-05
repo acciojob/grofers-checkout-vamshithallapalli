@@ -11,16 +11,14 @@ const getSum = () => {
 		total += Number(cell.textContent);
 	})
 
-	const newRow = document.createElement('tr');
-	const newCell = document.createElement('td');
+	  let ansDiv = document.getElementById("ans");
+      if (!ansDiv) {
+        ansDiv = document.createElement("div");
+        ansDiv.id = "ans";
+        document.body.appendChild(ansDiv);
+      }
 
-	newCell.setAttribute('colspan', '2');
-	newCell.textContent = total;
-
-	newRow.appendChild(newCell);
-
-	document.querySelector("table").appendChild(newRow);
-  
+      ansDiv.textContent = total;
 };
 
 getSumBtn.addEventListener("click", getSum);
