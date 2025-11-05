@@ -1,2 +1,29 @@
 
 /* Your CSS Code here. */
+table {
+  width: 60%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+caption {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+th, td {
+  border: 1px solid #888;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even){
+  background-color: #fafafa;
+}
